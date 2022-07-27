@@ -1,8 +1,13 @@
 import React from 'react'
+import { SLogo, SSidebar } from './styles';
 
-function Sidebar = () => {
-  return 
-  <div>Sidebar</div>
-}
+const Sidebar = () => {
+  return <SSidebar>
+    <SLogo>
+      <img />
+    </SLogo>
+    {/* <SSearch></SSearch> */}
+  </SSidebar>;
+};
 
-export default Sidebar
+export default Sidebar;

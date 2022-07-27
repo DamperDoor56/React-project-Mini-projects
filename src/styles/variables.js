@@ -20,5 +20,5 @@ export const btnReset = css`
     font-size:inherit;
     text-aling:inherit;
     padding: 0;
-
+`
     

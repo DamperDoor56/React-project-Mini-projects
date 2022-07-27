@@ -1,7 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { darkTheme, lightTheme } from './styles/variables';
+import { Helmet } from "react-helmet";
+import { GlobalStyle } from './styles/globalStyles';
+import Layout from './components/Layout/Layout';
+import { darkTheme, lightTheme } from './styles/theme';
+import Routes from './Routes';
 
 export const ThemeContext = React.createContext(null);
 
@@ -21,7 +25,9 @@ const App = () => {
 
         </Helmet>
         <>
-        <Layout>test</Layout>
+        <Layout>
+            <Routes />
+        </Layout>
         </>
     </ThemeProvider>
     </ThemeContext.Provider>

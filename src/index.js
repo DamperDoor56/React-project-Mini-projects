@@ -1,7 +1,11 @@
-import React from 'react';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { BrowserRouter as Router } from "react-router-dom";
 
-const App = () =>{
-  return <div></div>;
-};
-
-export default App;
+ReactDOM.render(
+    <Router>
+        <App />
+    </Router>,
+    document.getElementById("root")
+);
