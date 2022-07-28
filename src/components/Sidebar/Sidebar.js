@@ -1,6 +1,7 @@
 import React from 'react'
-import { SLogo, SSearch, SSidebar } from './styles';
+import { SLogo, SSearch, SSearchIcon, SSidebar } from './styles';
 import { logoSVG } from '../../assets';
+import { AiOutlineSearch } from "react-icons/ai"
 
 const Sidebar = () => {
   return (
@@ -9,7 +10,10 @@ const Sidebar = () => {
       <img src={logoSVG} alt="logo"/>
     </SLogo>
     <SSearch>
-
+      <SSearchIcon>
+        <AiOutlineSearch />
+      </SSearchIcon>
+      <input placeholder="Search" />
     </SSearch>
   </SSidebar>
   );
