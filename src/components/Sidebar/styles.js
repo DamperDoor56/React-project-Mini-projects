@@ -17,5 +17,10 @@ export const SLogo = styled.div`
         heigth: auto;
     }
     cursor: pointer;
+    
     margin-bottom: ${v.lgSpacing};
     `;
+
+export const SSearch = styled.div`
+    background: ${({theme}) => theme.bgAlpha};
+`

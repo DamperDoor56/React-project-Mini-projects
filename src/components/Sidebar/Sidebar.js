@@ -1,13 +1,18 @@
 import React from 'react'
-import { SLogo, SSidebar } from './styles';
+import { SLogo, SSearch, SSidebar } from './styles';
+import { logoSVG } from '../../assets';
 
 const Sidebar = () => {
-  return <SSidebar>
+  return (
+  <SSidebar>
     <SLogo>
-      <img />
+      <img src={logoSVG} alt="logo"/>
     </SLogo>
-    {/* <SSearch></SSearch> */}
-  </SSidebar>;
+    <SSearch>
+
+    </SSearch>
+  </SSidebar>
+  );
 };
 
 export default Sidebar;
