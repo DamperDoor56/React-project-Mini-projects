@@ -48,3 +48,21 @@ export const SSearchIcon = styled.button`
         font-size:20px;
        }
 `;
+
+export const SLinkContainer = styled.div`
+       background: transparent;
+       border-radius: ${v.borderRadius};
+       margin: 8px 0;
+
+       :hover{
+        box-shadow: inset 0 0 0 1px ${({theme}) => theme.bg3};
+       }
+`
+export const SLink = styled(Link)`
+       display: flex;
+       align-items: center;
+       text-decoration: none;
+       color: inherit;
+       font-size: 16px;
+       padding: calc
+`
