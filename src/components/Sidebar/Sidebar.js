@@ -30,8 +30,24 @@ const Sidebar = () => {
         {!!notification && <SLinkNotification>{notification}</SLinkNotification>}
       </SLink>
     </SLinkContainer>
+    ))};
+    <SDivider />
+    {secondaryLinksArray.map(({icon, label}) => 
+    (
+      <SLinkContainer>
+        <SLink to="/">
+          <SLinkIcon>{icon}</SLinkIcon>
+          <SLinkLabel>{label}</SLinkLabel>
+        </SLink>
+      </SLinkContainer>
     ))}
     <SDivider />
+    <STheme>
+      <SThemeLabel></SThemeLabel>
+      <SThemeToggler>
+        <SToggleThumb />
+      </SThemeToggler>
+    </STheme>
   </SSidebar>
   );
 };
@@ -66,5 +82,16 @@ const linksArray =[
     to: "/",
     notification: 0,
   }
+];
+
+const secondaryLinksArray =[
+  {
+    label: "Settings",
+    icon: <AiOutlineSetting />
+  },
+  {
+     label: "Logout",
+     icon: <MdLogout />,
+  },
 ]
 export default Sidebar;
