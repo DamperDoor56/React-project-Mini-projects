@@ -5,7 +5,7 @@ import { btnReset, v } from '../../styles/variables';
 export const SSidebar = styled.div`
     width: ${v.sidebar};
     background: ${({ theme }) => theme.bg};
-    height: 100vh;
+    height: 115vh;
     padding: ${v.lgSpacing};
     
     position: relative;`;
@@ -108,7 +108,7 @@ export const SThemeLabel = styled.span`
    margin: 0 auto;
    cursor: pointer;
    width: 36px;
-   heigth: 20px;
+   height: 20px;
    border-radius: 10px;
    background: ${({ theme }) => theme.bg3};
    
@@ -119,13 +119,13 @@ export const SThemeToggler = styled.button`
    margin: 0 auto;
    cursor: pointer;
    width: 36px;
-   heigth: 20px;
+   height: 20px;
    border-radius: 10px;
    background ${({ theme }) => theme.bg3};
    position:relative;
 `
 export const SToggleThumb = styled.div`
-   heigth: 18px;
+   height: 18px;
    width: 18px;
    position: absolute;
    top: 1px;
