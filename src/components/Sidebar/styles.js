@@ -50,7 +50,7 @@ export const SSearchIcon = styled.button`
        }
 `;
 export const SDivider = styled.div`
-      heigth: 1px;
+      height: 1px;
       width: 100%;
       background ${({theme}) => theme.bg3};
       margin: ${v.lgSpacing} 0;
