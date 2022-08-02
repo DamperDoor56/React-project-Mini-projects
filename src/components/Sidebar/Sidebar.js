@@ -1,11 +1,11 @@
 import React from 'react'
-import { SLink, SLinkContainer, SLinkIcon, SLinkLabel, SLinkNotification, SLogo, SSearch, SSearchIcon, SSidebar } from './styles';
+import { SLink, SLinkContainer, SLinkIcon, SLinkLabel, SLinkNotification, SLogo, SSearch, SSearchIcon, SSidebar, STheme, SDivider, SThemeLabel, SThemeToggler, SToggleThumb } from './styles';
 import { logoSVG } from '../../assets';
-import { AiOutlineSearch, AiOutlineHome, AiOutlineCalculator} from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineHome, AiOutlineCalculator, AiOutlineSetting} from "react-icons/ai";
 import { FaResearchgate } from "react-icons/fa";
 import { BsListCheck } from "react-icons/bs";
-import { GiRomanToga } from "react-icons/gi"
-import { SDivider } from '../Layout/styles';
+import { GiRomanToga } from "react-icons/gi";
+import { MdLogout } from 'react-icons/md';
 
 
 const Sidebar = () => {
@@ -30,7 +30,7 @@ const Sidebar = () => {
         {!!notification && <SLinkNotification>{notification}</SLinkNotification>}
       </SLink>
     </SLinkContainer>
-    ))};
+    ))}
     <SDivider />
     {secondaryLinksArray.map(({icon, label}) => 
     (
@@ -43,7 +43,7 @@ const Sidebar = () => {
     ))}
     <SDivider />
     <STheme>
-      <SThemeLabel></SThemeLabel>
+      <SThemeLabel>Dark Mode</SThemeLabel>
       <SThemeToggler>
         <SToggleThumb />
       </SThemeToggler>
@@ -81,8 +81,8 @@ const linksArray =[
     icon: <BsListCheck />,
     to: "/",
     notification: 0,
-  }
-];
+  },
+]
 
 const secondaryLinksArray =[
   {

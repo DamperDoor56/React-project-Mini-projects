@@ -13,11 +13,5 @@ export const SMain = styled.main`
    }
 `;
 
-export const SDivider = styled.div`
-   heigth: 1px;
-   width: 100%;
-   background: ${({theme}) => theme.bg3};
-   margin: ${v.smSpacing} 0;
-`
 
    
