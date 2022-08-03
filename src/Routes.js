@@ -1,6 +1,10 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom';
+import CaesarCipher from './components/pages/CaesarCipher';
+import Calculator from './components/pages/Calculator';
 import HomePage from './components/pages/HomePage';
+import RomanNumber from './components/pages/RomanNumber';
+import ToDoList from './components/pages/ToDoList';
 
 const Routes = () => {
   return (
@@ -9,13 +13,16 @@ const Routes = () => {
         <HomePage />
     </Route>
     <Route exact path="/Calculator">
-        <HomePage />
+        <Calculator />
     </Route>
-    <Route exact path="/Caesar-Cipher">
-        <HomePage />
+    <Route exact path="/CaesarCipher">
+        <CaesarCipher />
     </Route>
-    <Route exact path="/Roman-Converter">
-        <HomePage />
+    <Route exact path="/RomanNumber">
+        <RomanNumber />
+    </Route>
+    <Route exact path="/ToDoList">
+        <ToDoList />
     </Route>
   </Switch>
   );

@@ -115,7 +115,7 @@ export const SThemeToggler = styled.button`
    width: 36px;
    height: 20px;
    border-radius: 10px;
-   background ${({ theme }) => theme.bg3};
+   background gray;
    position:relative;
 `
 export const SToggleThumb = styled.div`

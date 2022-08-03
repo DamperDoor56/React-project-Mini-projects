@@ -62,25 +62,25 @@ const linksArray =[
   {
     label: "Calculator",
     icon: <AiOutlineCalculator />,
-    to: "/",
+    to: "/Calculator",
     notification: 0,
   },
   {
     label: "Caesar Cipher",
     icon: <FaResearchgate />,
-    to: "/",
+    to: "/CaesarCipher",
     notification: 0,
   },
   {
     label: "Roman Number Converter",
     icon: <GiRomanToga />,
-    to: "/",
+    to: "/RomanNumber",
     notification: 0,
   },
   {
     label: "To do List",
     icon: <BsListCheck />,
-    to: "/",
+    to: "/ToDoList",
     notification: 0,
   },
 ]
