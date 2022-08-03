@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { SLink, SLinkContainer, SLinkIcon, SLinkLabel, SLinkNotification, SLogo, SSearch, SSearchIcon, SSidebar, STheme, SDivider, SThemeLabel, SThemeToggler, SToggleThumb } from './styles';
 import { logoSVG } from '../../assets';
 import { AiOutlineSearch, AiOutlineHome, AiOutlineCalculator, AiOutlineSetting} from "react-icons/ai";
 import { FaResearchgate } from "react-icons/fa";
 import { BsListCheck } from "react-icons/bs";
 import { GiRomanToga } from "react-icons/gi";
-import { MdLogout } from 'react-icons/md';
-
+import { ThemeContext } from './../../App';
 
 const Sidebar = () => {
+  const {setTheme, theme} = useContext(ThemeContext)
   return (
   <SSidebar>
     <SLogo>
@@ -44,8 +44,9 @@ const Sidebar = () => {
     <SDivider />
     <STheme>
       <SThemeLabel>Dark Mode</SThemeLabel>
-      <SThemeToggler>
-        <SToggleThumb />
+      <SThemeToggler isActive={theme === 'dark'}
+      onClick={() => setTheme((p) => (p === 'light' ? 'dark' : 'light'))}>
+        <SToggleThumb style={theme === 'dark' ? {right: '1px'} : { }} />
       </SThemeToggler>
     </STheme>
   </SSidebar>
@@ -88,10 +89,6 @@ const secondaryLinksArray =[
   {
     label: "Settings",
     icon: <AiOutlineSetting />
-  },
-  {
-     label: "Logout",
-     icon: <MdLogout />,
   },
 ]
 export default Sidebar;

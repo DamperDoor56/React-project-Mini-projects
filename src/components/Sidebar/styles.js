@@ -5,7 +5,7 @@ import { btnReset, v } from '../../styles/variables';
 export const SSidebar = styled.div`
     width: ${v.sidebar};
     background: ${({ theme }) => theme.bg};
-    height: 115vh;
+    height: 100vh;
     padding: ${v.lgSpacing};
     
     position: relative;`;
@@ -53,7 +53,7 @@ export const SDivider = styled.div`
       height: 1px;
       width: 100%;
       background ${({theme}) => theme.bg3};
-      margin: ${v.lgSpacing} 0;
+      margin: 1.1rem 0;
       `;
 
 export const SLinkContainer = styled.div`
@@ -104,16 +104,10 @@ export const STheme = styled.div`
    font-size: 16px;
 `;
 export const SThemeLabel = styled.span`
-   ${btnReset};
-   margin: 0 auto;
-   cursor: pointer;
-   width: 36px;
-   height: 20px;
-   border-radius: 10px;
-   background: ${({ theme }) => theme.bg3};
-   
-   position:relative;
-   `
+   display: block;
+   flex: 1;
+   margin: 1rem 2rem;
+   `;
 export const SThemeToggler = styled.button`
    ${btnReset};
    margin: 0 auto;
