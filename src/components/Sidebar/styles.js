@@ -10,6 +10,13 @@ export const SSidebar = styled.div`
     
     position: relative;`;
 
+export const SSidebarButton = styled.button`
+       ${btnReset};
+       position:absolute;
+       top:
+    
+    `
+
 export const SLogo = styled.div`
     width:80px;
 
