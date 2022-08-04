@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { btnReset, v } from '../../styles/variables';
 
 export const SSidebar = styled.div`
-    width: ${v.sidebar};
+    width: ${({ isOpen }) => (!isOpen ? `auto` : v.sidebarWidth)};
     background: ${({ theme }) => theme.bg};
     height: 100vh;
     padding: ${v.lgSpacing};
@@ -14,7 +14,7 @@ export const SSidebarButton = styled.button`
        ${btnReset};
        position:absolute;
        top:${v.xxlSpacing};
-       right:${({isOpen}) => isOpen ? `-16px` : `-40px`};
+       right:${({isOpen}) => isOpen ? `-16px` : `-20px`};
        width: 32px;
        height:32px;
        border-radius: 50%;
@@ -29,7 +29,7 @@ export const SSidebarButton = styled.button`
     `
 
 export const SLogo = styled.div`
-    width:80px;
+   width: 50px;
 
     img{
         max-heigth: 100%;
