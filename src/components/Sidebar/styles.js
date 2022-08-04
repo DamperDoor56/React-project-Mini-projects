@@ -75,7 +75,7 @@ export const SDivider = styled.div`
       `;
 
 export const SLinkContainer = styled.div`
-       background: transparent;
+       background: ${({theme, isActive}) => !isActive ? `transparent` : theme.bg3};
        border-radius: ${v.borderRadius};
        margin: 8px 0;
 
