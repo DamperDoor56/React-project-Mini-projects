@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 import { btnReset, v } from '../../styles/variables';
 
 export const SSidebar = styled.div`
+
     width: ${({ isOpen }) => (!isOpen ? `auto` : v.sidebarWidth)};
     background: ${({ theme }) => theme.bg};
     height: 100vh;
     padding: ${v.lgSpacing};
     
-    position: relative;`;
+    position: absolute;
+    z-index: 99;
+    `;
 
 export const SSidebarButton = styled.button`
        ${btnReset};
