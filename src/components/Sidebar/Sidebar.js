@@ -89,12 +89,6 @@ const linksArray =[
     notification: 0,
   },
   {
-    label: "Calculator",
-    icon: <AiOutlineCalculator />,
-    to: "/Calculator",
-    notification: 0,
-  },
-  {
     label: "Caesar Cipher",
     icon: <FaResearchgate />,
     to: "/CaesarCipher",
