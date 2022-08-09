@@ -5,7 +5,7 @@ import { HomeToDo, Title } from './styles/ToDo.js'
 function ToDoList(){
   return(
     <HomeToDo>
-      <Title> To do List</Title>
+      <Title> What's your plan for today?</Title>
       <TodoForm />
     </HomeToDo>
     
