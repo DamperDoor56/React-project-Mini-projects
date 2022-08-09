@@ -13,6 +13,6 @@ export const HomeToDo = styled.div`
 export const Title = styled.text`
     font-size: 2rem;
     position: absolute; 
-    top: 100px;
+    top: 200px;
     font-family: monospace;
 `
