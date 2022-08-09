@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from 'react'
 import { SLink, SLinkContainer, SLinkIcon, SLinkLabel, SLinkNotification, SLogo, SSearch, SSearchIcon, SSidebar, STheme, SDivider, SThemeLabel, SThemeToggler, SToggleThumb, SSidebarButton } from './styles';
 import { logoSVG } from '../../assets';
-import { AiOutlineSearch, AiOutlineHome, AiOutlineCalculator, AiOutlineLeft, AiOutlineSetting} from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineHome, AiOutlineLeft, AiOutlineSetting} from "react-icons/ai";
 import { FaResearchgate } from "react-icons/fa";
 import { BsListCheck } from "react-icons/bs";
 import { GiRomanToga } from "react-icons/gi";

@@ -14,6 +14,13 @@ export const Home = styled.div`
     text-align: center;
     align-items: center;
     `;
+
+export const TodoHome = styled.div `
+   background : linear-gradient(180deg, ${({ theme }) => theme.hometodo}, ${({ theme }) => theme.hometodo}, ${({ theme }) => theme.home}),
+   url("https://wallpaperaccess.com/full/151024.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+`;
 export const SideText = styled.text`
    font-family: monospace;
    font-size: 25px;
