@@ -4,17 +4,21 @@ import { btnReset } from '../../../styles/variables';
 
 export const Home = styled.div`
     width: 100vw;
+    position:fixed;
     height: 100vh;
-    display: flex;
     background : linear-gradient(180deg, ${({ theme }) => theme.home}, ${({ theme }) => theme.home}, ${({ theme }) => theme.home}),
     url("https://res.cloudinary.com/dweiaqd6l/image/upload/v1659991466/pexels-joyston-judah-933054_ikxy2e.jpg");
     background-size:cover;
-    flex-wrap:wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     `;
 
+export const textDiv = styled.div`
+   display: flex;
+   flex-wrap:wrap;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+
+`
 export const TodoHome = styled.div `
    background : linear-gradient(180deg, ${({ theme }) => theme.hometodo}, ${({ theme }) => theme.hometodo}, ${({ theme }) => theme.home}),
    url("https://wallpaperaccess.com/full/151024.jpg");
