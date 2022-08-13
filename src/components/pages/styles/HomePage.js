@@ -11,12 +11,14 @@ export const Home = styled.div`
     background-size:cover;
     `;
 
-export const textDiv = styled.div`
+export const TextDiv = styled.div`
    display: flex;
-   flex-wrap:wrap;
-   justify-content: center;
-   text-align: center;
-   align-items: center;
+   margin-top: 12%;
+   margin-left: 5%;
+   flex-direction: column;
+   justify-content: left;
+   text-align: left;
+   align-items: left;
 
 `
 export const TodoHome = styled.div `
@@ -27,13 +29,20 @@ export const TodoHome = styled.div `
 `;
 export const SideText = styled.text`
    font-family: monospace;
+   margin-left:5%;
    font-size: 25px;
-   position: absolute;
-   top: 200px;
 `;
 export const BButtons = styled.button`
    ${btnReset};
-   margin: 1rem;
+   background: ${({ theme }) => theme.bg};
+   height: 50px;
+   width: 120px;
+   border-radius: 3px;
+   cursor: pointer;
+
+`
+export const BButtons2 = styled.button`
+   ${btnReset};
    background: ${({ theme }) => theme.bg};
    height: 50px;
    width: 120px;

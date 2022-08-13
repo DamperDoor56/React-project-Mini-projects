@@ -1,20 +1,20 @@
 import React from 'react'
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
-import {Home, SideText,BButtons, textDiv} from './styles/HomePage'
+import {Home, SideText,BButtons, TextDiv, BButtons2} from './styles/HomePage'
 
 const HomePage = () => {
   return <Home>
-    <textDiv>
+    <TextDiv>
    <SideText>
-    Hello there!, thank you for visit <br></br> this collection of projects, I hope you like them!
+    Hello there!, thank you for visit this collection <br></br> of projects, I hope you like them!
    </SideText>
     <BButtons>
     <AiFillGithub /> Visit my Github!
     </BButtons>
-    <BButtons>
+    <BButtons2>
     <AiFillLinkedin /> Visit my Linkedin!
-    </BButtons>
-    </textDiv>
+    </BButtons2>
+    </TextDiv>
   </Home>;
 };
 
