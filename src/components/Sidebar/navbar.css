@@ -20,7 +20,7 @@
     justify-content: center;
     position: fixed;
     top: 0;
-    /* left: -100%; */
+    left: -100%;
     transition: 850ms;
 }
 
@@ -30,7 +30,7 @@
 }
 .nav-text{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     padding: 18px;
     list-style: none;
@@ -41,12 +41,27 @@
     text-decoration: none;
     color: snow;
     font-size: 18px;
-    width: 95%;
-    height: 100%;
+    width: 200px;
+    height: 25px;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.7rem 0;
     border-radius: 4px;
 }
 .nav-text a:hover{
-    background-color: rgb(16, 18, 37);
+    background-color: rgb(73, 151, 175);
+}
+.nav-menu-items{
+    width: 100%;
+}
+
+.navbar-toggle{
+    background-color: #111;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+span{
+    margin-left: 16px;
 }

@@ -13,13 +13,13 @@ export const SidebarData =[
     },
     {
         title: "To Do List",
-        path: '/',
+        path: '/ToDoList.js',
         icon: <BsListCheck />,
         cName: 'nav-text'
 
     },
     {
-        title: "Roman Number Converter",
+        title: "Roman Numbers",
         path: '/',
         icon: <GiRomanToga />,
         cName: 'nav-text'

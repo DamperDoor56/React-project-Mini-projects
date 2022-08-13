@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Todo from './Components/Todo.js';
 import TodoForm from './Components/TodoForm.js';
-import { TodoHome } from './styles/HomePage';
 
 import './styles/Todo.css'
 
@@ -42,7 +41,6 @@ function ToDoList(){
     setTodos(updatedTodos);
   }
   return(
-    <TodoHome>
     <div className='Home'>
 
       <div className='former-app'>
@@ -54,7 +52,6 @@ function ToDoList(){
      />
      </div>
     </div>
-    </TodoHome>
   );
 };
 
