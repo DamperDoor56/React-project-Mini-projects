@@ -13,20 +13,20 @@ export const SidebarData =[
     },
     {
         title: "To Do List",
-        path: '/ToDoList.js',
+        path: '/ToDoList',
         icon: <BsListCheck />,
         cName: 'nav-text'
 
     },
     {
-        title: "Roman Numbers",
-        path: '/',
+        title: "Roman Number",
+        path: '/RomanNumber',
         icon: <GiRomanToga />,
         cName: 'nav-text'
     },
     {
         title: "Caesar Cipher",
-        path: '/',
+        path: '/CaesarCipher',
         icon: <GiArchiveResearch />,
         cName: 'nav-text'
     },

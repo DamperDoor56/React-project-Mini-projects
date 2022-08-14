@@ -4,20 +4,23 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Sidebar/Navbar';
 import HomePage from './components/pages/HomePage'
 import ToDoList from './components/pages/ToDoList'
-import RomanNumber from './components/pages/RomanNumber'
-import CaesarCipher from './components/pages/CaesarCipher'
 
 function App() {
   return (
     <>
         <Router>
             <Navbar/>
-            <Switch>
-                <Route path= '/' component={HomePage} />
-                <Route path= '/' component={ToDoList} />
-                <Route path= '/' component={RomanNumber} />
-                <Route path= '/' component={CaesarCipher} />
-            </Switch>
+                <Switch>
+                  <Route exact path="/">
+                    <HomePage />
+                  </Route>
+                  <Route exact path='/ToDoList'>
+                    <ToDoList />
+                  </Route>
+                  <Route exact path='/ToDoList'>
+                    <ToDoList />
+                  </Route>
+                </Switch>
         </Router>
     </>
   )
