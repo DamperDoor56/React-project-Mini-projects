@@ -1,6 +1,5 @@
 .Home{
-    width: 100vw;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,7 +31,7 @@
     border-radius: 4px 0 0 4px;
     border: 2px solid #6b9eeb;
     outline: none;
-    width: 80%;
+    width: 70%;
     background: transparent;
     color: #fff;
   }
