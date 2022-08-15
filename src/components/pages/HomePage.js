@@ -4,7 +4,7 @@ import './styles/Home.css';
 export const ThemeContext = createContext(null);
 
 const HomePage = () => {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('');
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
@@ -12,10 +12,9 @@ const HomePage = () => {
   return (<>
   <div className='home' id={theme}>
     <h1 className='titls-home'>Home Page</h1> 
-    <button></button>
-    <button></button>
+    <button id={theme}>Github</button>
+    <button id={theme}>Linkedin</button>
   </div>
-  </ThemeContext.Provider>
   </>
   )
 

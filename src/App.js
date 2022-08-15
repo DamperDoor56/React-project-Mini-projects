@@ -5,6 +5,7 @@ import Navbar from './components/Sidebar/Navbar';
 import HomePage from './components/pages/HomePage';
 import ToDoList from './components/pages/ToDoList';
 import RomanNumber from './components/pages/RomanNumber';
+import ReactSwitch from 'react-switch';
 import CaesarCipher from './components/pages/CaesarCipher';
 export const ThemeContext = createContext(null);
 
@@ -21,7 +22,10 @@ function App() {
     <ThemeContext.Provider value={{theme, toggleTheme}}>
       <body className='main' id={theme}>
         <Router>
-            <Navbar/>
+            <Navbar />
+            <div className='switch2'>
+        <ReactSwitch onChange={toggleTheme} checked={theme === 'light'}/>
+        </div>
                 <Switch>
                   <Route exact path="/">
                     <HomePage />

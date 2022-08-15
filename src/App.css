@@ -9,3 +9,19 @@
 body{
     height: 100vh;
 }
+#light .home {
+    background-image: linear-gradient(90deg, rgba(165, 122, 202, 0.4),rgba(165, 122, 202, 0.4),rgba(165, 122, 202, 0.4)), url(https://res.cloudinary.com/dweiaqd6l/image/upload/v1659991466/pexels-joyston-judah-933054_ikxy2e.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: #111;
+}
+#dark .home {
+    background-image: linear-gradient(90deg, rgba(17, 17, 17, 0.556),rgba(17, 17, 17, 0.556),rgba(17, 17, 17, 0.556)), url(https://res.cloudinary.com/dweiaqd6l/image/upload/v1659991466/pexels-joyston-judah-933054_ikxy2e.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: snow;
+}
+#light{
+    background: rgb(66, 66, 87);
+    color: #111;
+}
