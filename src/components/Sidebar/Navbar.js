@@ -10,7 +10,7 @@ import ReactSwitch from 'react-switch';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
@@ -28,7 +28,7 @@ function Navbar() {
         </Link>
     </div>
     <nav id={theme} className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-      <ul id={theme}  className='nav-menu-items' onClick={showSidebar}>
+      <ul className='nav-menu-items' onClick={showSidebar}>
         <li  id={theme} className='navbar-toggle'>
           <Link to='#' className='menu-bars'>
             <AiOutlineClose onClick={showSidebar} />
