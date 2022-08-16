@@ -1,9 +1,11 @@
 import React from 'react'
-
-function RomanNumber() {
+import { useState } from "react"
+function RomanNumber(num) {
+  const [number, setNumber] = useState('')
+  console.log(number);
   var romanToNumber ={
     M: 1000,
-    CM:900,
+    CM: 900,
     D: 500,
     CD: 400,
     C: 100,
@@ -16,8 +18,23 @@ function RomanNumber() {
     VI: 4,
     I:1
   };
+  var roman = '';
+
+
+  for(var key in romanToNumber){
+    while(num >= romanToNumber[key]){
+      roman += key;
+      num -= romanToNumber[key];
+    }  
+  }
+  
   return (
-    <div className='home' id='theme'>Roman Number Converter</div>
+    <div className='home'>
+      <input onChange={e => setNumber(e.target.value)}></input>
+      <p></p>
+    </div>
   )
 }
+
+
 export default RomanNumber;
