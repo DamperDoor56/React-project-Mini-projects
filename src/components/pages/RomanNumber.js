@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from "react"
-import './styles/Roman.css'
-import { BsSearch } from 'react-icons/bs';
+import './styles/Roman.css';
 
 function RomanNumber(num) {
   let romanReturn = '';
@@ -41,6 +40,12 @@ function RomanNumber(num) {
     } else if(num >= 500 && num < 900){
       romanReturn += 'D';
       num -= 499;
+    } else if(num >= 900 && num < 1000){
+      romanReturn += 'CM';
+      num -= 899;
+    } else if(num >= 1000){
+      romanReturn += 'M';
+      num -= 999;
     } 
     else{
       num -= 1;

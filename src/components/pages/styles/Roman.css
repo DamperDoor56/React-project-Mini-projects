@@ -14,14 +14,16 @@
     margin-top: 8rem;
     background-color: rgba(17, 17, 17, 0.831);
     border-radius: 15px;
-    min-width: 50%;
+    min-width: 40%;
     min-height: 250px;
+    border: 2px solid gray;
 }
 input{
     margin-top: 2rem;
     width: 40%;
+    color: snow;
     border-radius: 15px;
-    background-color: rgba(136, 136, 136, 0.722);
+    background-color: rgba(113, 113, 113, 0.722);
     padding: 1rem;
     border: none;
     outline: none;
