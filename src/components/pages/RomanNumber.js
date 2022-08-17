@@ -18,22 +18,29 @@ function RomanNumber(num) {
     } else if(num === 9){
       romanReturn += 'IX';
       num -= 9;
-    } else if(num === 10){
-      romanReturn += 'X';
-      num -= 10;
-    }else if(num <= 14){
+    } else if(num >= 10 && num < 40){
       romanReturn += 'X';
       num -= 9;
-    } else if(num >= 15  && num < 19){
-      romanReturn += 'XV';
-      num -= 14;
     }else if(num >= 40 && num < 50){
       romanReturn += 'XL';
       num -= 39;
-    } else if(num >= 50){
+    } else if(num >= 50 && num < 90){
       romanReturn += 'L';
-      num -= 50;
-    }
+      num -= 49;
+    }  else if(num >= 90 && num < 100){
+      romanReturn += 'XC';
+      num -= 89;
+    }  
+     else if(num >= 100 && num < 400){
+      romanReturn += 'C';
+      num -= 99;
+    }else if(num >= 400 && num < 500){
+      romanReturn += 'CD';
+      num -= 399;
+    } else if(num >= 500 && num < 900){
+      romanReturn += 'D';
+      num -= 499;
+    } 
     else{
       num -= 1;
     }
@@ -47,8 +54,10 @@ function RomanNumbers(){
 
   return(<>
     <div className='home'>
+      <div className='wraper'>
       <input onChange={e => setNumber(e.target.value)}></input>
-      <p>{RomanNumber(parseInt(number))}</p>
+      <div className='inputinfo'><p>{RomanNumber(parseInt(number))}</p></div>
+      </div>
     </div>
     </>
   )

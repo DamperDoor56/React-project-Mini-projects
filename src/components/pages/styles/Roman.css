@@ -1,5 +1,24 @@
-.home p{
-    display: block;
-    padding: 5rem;
+input{
+    width: 30%;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.722);
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+.inputinfo{
+    background-color: rgba(17, 17, 17, 0.879);
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    padding: 2rem 0;
+    width: 20%;
     font-size: 20px;
+}
+
+.wraper{
+    background-color: rgba(17, 17, 17, 0.831);
+    width: 600px;
+    height: 250px;
 }
