@@ -41,7 +41,7 @@ function ToDoList(){
     setTodos(updatedTodos);
   }
   return(
-    <div className='Home'>
+    <div className='home'>
 
       <div className='former-app'>
       <div className='title'> What's your plan?</div>

@@ -10,11 +10,7 @@ import ReactSwitch from 'react-switch';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
-  const [theme, setTheme] = useState('dark');
 
-  const toggleTheme = () => {
-    setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
-  };
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -22,14 +18,14 @@ function Navbar() {
     <>
     
     <IconContext.Provider value={{color: 'snow'}}>
-    <div className='navbar' id={theme}>
+    <div className='navbar'>
         <Link to="#" className='menu-bars'>
           <AiOutlineMenu onClick={showSidebar}/>
         </Link>
     </div>
-    <nav id={theme} className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+    <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
       <ul className='nav-menu-items' onClick={showSidebar}>
-        <li  id={theme} className='navbar-toggle'>
+        <li className='navbar-toggle'>
           <Link to='#' className='menu-bars'>
             <AiOutlineClose onClick={showSidebar} />
           </Link>
@@ -46,7 +42,6 @@ function Navbar() {
         })}
       </ul>
       <div className='switch'>
-        <ReactSwitch onChange={toggleTheme} checked={theme === 'light'}/>
         </div>
     </nav>
     </IconContext.Provider>

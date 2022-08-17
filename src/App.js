@@ -22,10 +22,8 @@ function App() {
     <ThemeContext.Provider value={{theme, toggleTheme}}>
       <body className='main' id={theme}>
         <Router>
-            <Navbar />
-            <div className='switch2'>
-        <ReactSwitch onChange={toggleTheme} checked={theme === 'light'}/>
-        </div>
+            <Navbar 
+            />
                 <Switch>
                   <Route exact path="/">
                     <HomePage />

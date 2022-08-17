@@ -1,5 +1,4 @@
-.Home{
-    height: 85vh;
+.home{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -12,12 +11,12 @@
     font-family: monospace;
 }
 .former-app{
+    position: absolute;
+    top: 150px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
     background-color: #111;
     border-radius: 12px;
-    min-height: auto;
+    min-height: 300px;
     padding: 2rem;
     width: 500px;
 }
