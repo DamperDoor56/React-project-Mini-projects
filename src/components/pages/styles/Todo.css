@@ -11,14 +11,14 @@
     font-family: monospace;
 }
 .former-app{
-    position: absolute;
-    top: 150px;
+    margin-top: 1rem;
+    align-self: center;
     text-align: center;
     background-color: #111;
     border-radius: 12px;
-    min-height: 300px;
+    min-height: 400px;
     padding: 2rem;
-    width: 500px;
+    min-width: 30% !important;
 }
   .complete {
     text-decoration: line-through;
@@ -30,7 +30,7 @@
     border-radius: 4px 0 0 4px;
     border: 2px solid #6b9eeb;
     outline: none;
-    width: 70%;
+    max-width: 60%;
     background: transparent;
     color: #fff;
   }

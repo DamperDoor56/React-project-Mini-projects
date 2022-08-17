@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react"
 import './styles/Roman.css'
+import { BsSearch } from 'react-icons/bs';
 
 function RomanNumber(num) {
   let romanReturn = '';
@@ -54,8 +55,9 @@ function RomanNumbers(){
 
   return(<>
     <div className='home'>
+    <h1 className='heading'>Roman Number Converter</h1>
       <div className='wraper'>
-      <input onChange={e => setNumber(e.target.value)}></input>
+      <input autoFocus onChange={e => setNumber(e.target.value)} placeholder='Add some value'></input>
       <div className='inputinfo'><p>{RomanNumber(parseInt(number))}</p></div>
       </div>
     </div>
