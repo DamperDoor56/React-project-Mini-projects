@@ -1,37 +1,41 @@
-.home{
+.homecaesar{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: end;
+    justify-items: center;
+    text-align: center;
 }
-.home h1{
+.homecaesar h1{
     align-self: center;
+    font-size: 200%;
     padding: 2rem;
 }
-.home input{
+.homecaesar input{
     align-self: center;
     padding: 1rem;
     margin: 1rem 0;
     min-width: 20%;
 }
 .info{
-    display: block;
     background-color: rgba(17, 17, 17, 0.459);
     border-radius: 15px;
     position:absolute;
     right: 0;
-    top: 350px;
+    font-size: 13px;
+    top: 450px;
     max-width: 400px;
     height: auto;
-    padding: 2rem;
+    padding: 1rem;
+    transition: all 0.5s;
 }
 
 .info span {
     color: #ef670e;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 15px;
 }
-.home button{
+.homecaesar .info-btn{
+    align-self: center;
     margin: 2rem;
     cursor: pointer;
     width: 50px;
@@ -44,9 +48,8 @@
     border: 2px solid snow;
     transition: all 0.5s;
 }
-.home button:hover{
+.homecaesar .info-btn:hover{
     background-color: snow;
     color: #111;
     border: 2px solid #111;
-
 }
