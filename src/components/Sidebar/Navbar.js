@@ -4,8 +4,6 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import {SidebarData} from './SidebarData';
 import './navbar.css';
 import { IconContext } from 'react-icons'
-import ReactSwitch from 'react-switch';
-
 
 
 function Navbar() {

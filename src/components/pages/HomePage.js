@@ -6,7 +6,7 @@ const HomePage = () => {
   return (<>
   <div className='welcome'>
     <h1>Home Page</h1>
-    <p>Hi! Thank you for passing by! This is a collection of react projects. <br></br>
+    <p>Hi! Thank you for passing by! This is a collection of react projects.
     You can also take a look at my Github or Linkedin profile</p>
     <div className="buttons">
     <button><a href='https://github.com/DamperDoor56'><BsGithub /> Github</a> </button>
