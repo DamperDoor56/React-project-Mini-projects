@@ -27,6 +27,7 @@
 
 .nav-menu.active{
     transform: translateX(0%);
+    z-index: 100;
 }
 .nav-text{
     display: flex;

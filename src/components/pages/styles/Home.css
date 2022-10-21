@@ -1,56 +1,15 @@
 *{
     margin: 0;
     padding: 0%;
+    
 }
 h1{
     height: 0;
 }
 .welcome{
-    margin-top:5rem;
-    width: 100%;
+    background: url('https://res.cloudinary.com/dweiaqd6l/image/upload/v1659991466/pexels-joyston-judah-933054_ikxy2e.jpg');    width: 100%;
+    height: 100vh;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
-}
-.titls-home{
-    display: block;
-    font-size: 50px;
-    transition: all 0.5s;
-    text-decoration: underline;
-    text-decoration-color: #111;
-}
-.titls-home:hover{
-    text-decoration-color: snow;
-    color: #111;
-}
-.ptext{
-    font-size: 20px;
-    margin-top: 7rem;
-}
-.center-them{
-    margin-top: 2rem;
-}
-.center-them button{
-    padding: 0.5rem;
-    margin: 0.5rem;
-    width: auto;
-    border-radius: 10px;
-    border: 2px solid #111;
-    transition: all 0.5s;
-}
-.center-them button{
-    font-size: 30px;
-}
-.center-them button a{
-    text-decoration: none;
-    color: #111;
-    transition: all 0.5s;
-}
-.center-them button:hover{
-    background-color: #111;
-    border:2px solid snow;
-}
-.center-them button:hover a{
-    color: snow;
 }
