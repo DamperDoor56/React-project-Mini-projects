@@ -59,7 +59,7 @@ function RomanNumbers(){
   const [number, setNumber] = useState('')
 
   return(<>
-    <div className='home'>
+    <div className='home-roman'>
     <h1 className='heading'>Roman Number Converter</h1>
       <div className='wraper'>
       <input autoFocus onChange={e => setNumber(e.target.value)} placeholder='Add some value'></input>
