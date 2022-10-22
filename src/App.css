@@ -7,9 +7,5 @@
     font-weight: 600;
 }
 body{
-    height: 100vh;
-    background-image: linear-gradient(90deg, rgba(17, 17, 17, 0.556),rgba(17, 17, 17, 0.556),rgba(17, 17, 17, 0.556)), url(https://res.cloudinary.com/dweiaqd6l/image/upload/v1659991466/pexels-joyston-judah-933054_ikxy2e.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
-    color: snow;
+    overflow: hidden;
 }

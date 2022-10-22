@@ -9,7 +9,7 @@ function Todo({todos, completeTodo, removeTodo, updatedTodos}) {
         value: ''
     });
 
-    const submitUpdate = value => {
+    const submitUpdate = value => { 
         updatedTodos(edit.id, value);
         setEdit({
             id: null,
@@ -23,10 +23,7 @@ function Todo({todos, completeTodo, removeTodo, updatedTodos}) {
 
   return todos.map((todo, index) =>
     <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
-        <div key={todo.id} onClick={() => completeTodo(todo.id)}>
-            {todo.text}
-        </div>
-        <div classame='icons'>
+    <div className='icons'>
             <RiCloseCircleLine 
             onClick={() => removeTodo(todo.id)}
             className='delete-icon' />
@@ -35,6 +32,10 @@ function Todo({todos, completeTodo, removeTodo, updatedTodos}) {
             className='edit-icon'
             />
         </div>
+        <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+            {todo.text}
+        </div>
+        
     </div>
   )
 }
