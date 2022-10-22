@@ -1,12 +1,22 @@
 .homecaesar{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     justify-items: center;
     text-align: center;
     height: 100vh;
     background: url('https://res.cloudinary.com/dweiaqd6l/image/upload/v1666471825/bookshelf-wallpaper-26_t4zrfg.jpg');
     background-size: cover;
+}
+.wraper-caersar{
+    margin-top: 30px;
+    padding: 1rem;
+    width: 600px;
+    background: rgba(87, 87, 87, 0.829);
+    backdrop-filter: blur(5px);
+    display:flex;
+    border-radius: 15px;
+    height: 400px;
+    flex-direction: column;
 }
 .homecaesar h1{
     align-self: center;
@@ -17,12 +27,12 @@
     min-width: 20%;
 }
 .info{
-    background-color: rgba(17, 17, 17, 0.459);
+    background-color: rgb(167, 167, 167);
     border-radius: 15px;
     position:absolute;
     right: 0;
     font-size: 13px;
-    top: 450px;
+    top: 350px;
     max-width: 400px;
     height: auto;
     padding: 1rem;
