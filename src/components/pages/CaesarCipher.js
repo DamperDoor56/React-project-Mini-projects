@@ -33,6 +33,7 @@ const CaesarCipher = () => {
 
   return <>
    <div className='homecaesar'>
+   <div className="wraper-caersar">
     <h1>Caesar Cipher</h1>
     {
      show? <p className='info'>In cryptography, a<span>Caesar cipher</span> is one of the simplest and most widely known encryption techniques. 
@@ -46,6 +47,7 @@ const CaesarCipher = () => {
     <p>You can try with <br></br> 'Rfyr uyq dsl zsr Gk rpwgl em cyr qmkc ZZO afgaicl', 2 </p>
     <p>{codeCipher(word,number)}</p>
     <button className='info-btn' onClick={() => setShow(!show)} ><BsInfoLg /></button>
+    </div>
     </div>
     </>
 };
